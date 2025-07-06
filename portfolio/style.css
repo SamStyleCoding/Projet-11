@@ -1,0 +1,144 @@
+body{
+	margin: 0;
+}
+
+.container-nav {
+	top: 0;
+	width: 100%;
+	height: 60px;
+	background-color: #333;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	z-index: 2;
+}
+
+.titre {
+	padding-left: 20px;
+	font-size: 30px;
+	color: #fff;
+}
+
+.menu-icon-label {
+	font-size: 25px;
+	padding-right: 20px;
+	cursor: pointer;
+	color: #fff;
+	transition: opacity 0.2s;
+}
+
+.menu-icon-label:hover {
+	opacity: 0.5;
+}
+
+.menu-toggle {
+	display: none;
+}
+
+.nav-menu {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 250px;
+	height: 100%;
+	background-color: #333;
+	transform: translateX(100%);
+	transition: transform 0.4s ease;
+	z-index: 1; 
+	overflow-y: auto;
+	margin-top: 60px;
+}
+
+ .menu-toggle:checked + .nav-menu {
+      transform: translateX(0);
+    }
+
+.nav-menu ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.text-decoration {
+	text-decoration: none;
+	color: inherit;
+}
+
+.nav-menu li {
+	padding: 15px 20px;
+	border-bottom: 1px solid #444;
+	font-size: 18px;
+	color: #fff;
+	cursor: pointer;
+	transition: opacity 0.3s;
+}
+
+.nav-menu li:hover {
+	opacity: 0.5;
+}
+
+ header {
+  position: relative;
+  width: 100%; 
+  height: auto;
+}
+
+.img-cover {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.img-profil {
+  position: absolute;
+  bottom: 6rem;
+  left: 3.5rem;   
+  width: 180px; 
+  border-radius: 50%;
+  border: 2px solid white; 
+}
+
+@keyframes animate {
+	to {
+		background-position-x: -500px;
+	}
+}
+.name {
+	position: absolute;
+	margin-left: 4.5rem;
+	margin-top: -6rem;
+	font-size: 1.6rem;
+	font-weight: bold;
+	background: url("images/Gradient-Featured-Image-03.webp") center;
+	background-size: cover;
+	background-clip: text;
+	color: transparent; 
+	animation: animate 6s linear infinite;
+}
+
+ @keyframes typing {
+      0% {
+        width: 0ch;
+      }
+      20% {
+        width: 0ch;
+      }
+      70% {
+        width: 19.5ch;
+              }
+      100% {
+        width: 19.5ch;
+      }
+    }
+
+.professionnel {
+	font-size: 1.8rem;
+	margin-top: -3rem;
+	margin-left: 1rem;
+	white-space: nowrap;
+	overflow: hidden;
+	color: #fff;
+	animation: typing 4s steps(22) infinite alternate-reverse;
+}
+
