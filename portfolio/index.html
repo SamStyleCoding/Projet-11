@@ -4,22 +4,20 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Portfoli – Sam Radinfar</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Libertinus+Mono&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 	<nav class="container-nav">
 		<h1 class="titre">Portfolio</h1>
 		<div>
-			<label for="menu-toggle" class="menu-icon-label">☰</label>
-		</div>
-		<input type="checkbox" name="menu-toggle" id="menu-toggle" class="menu-toggle">
-		<div class="nav-menu">
-			<ul>
+			 <ul class="menu-label">
 				<li><a href="#Presentation" class="text-decoration">Presentation</a></li>
 				<li><a href="#Competences" class="text-decoration">Competences</a></li>
 				<li><a href="#Parcours" class="text-decoration">Parcours</a></li>
 				<li><a href="#Projets" class="text-decoration">Projets</a></li>
-				<li><a href="CV _ Hesam Radinfar.pdf" class="text-decoration" target="_blank">CV</a></li>
 			</ul>
 		</div>
 	</nav>
@@ -29,6 +27,41 @@
 			<p class="name">Sam Radinfar</p>
 			<p class="professionnel">Développeur Front-End</p>
 	</header>
+	<main>
+		<section id="Presentation" class="section-pre">
+			<h2 class="Presentation">
+				Presentation
+			</h2>
+			<p class="p-presentation">
+				Développeur Front-End, je conçois des interfaces claires et responsives
+				avec HTML, CSS, JavaScript, React et Redux. 
+				<br>
+				J’ai réalisé plus d’une dizaine de projets dans le cadre de ma formation, en
+				respectant scrupuleusement les maquettes fournies et les exigences
+				techniques.
+				<br>
+				Soucieux de la qualité du code et de sa maintenabilité, je suis une personne
+				curieuse, motivée et organisée, et je souhaite intégrer une équipe
+				dynamique pour continuer à progresser.
+			</p>
+			 <a href="CV _ Hesam Radinfar.pdf" class="button-cv" target="_blank"><button class="cv">CV</button></a>
+		</section>
+		<hr class="hr">
+		<section class="section-comp">
+			<h2 id="Competences" class="competences">Competences</h2>
+			<div class="img-comp">
+				<img class="img-competences" src="images/images.png" alt="">
+				<img class="img-competences" src="images/css3-logo-png_seeklogo-186678.png" alt="">
+				<img class="img-competences" src="images/images (1).png" alt="">
+				<img class="img-competences" src="images/javascript.jpg" alt="">
+				<img class="img-competences" src="images/react.js.png" alt="">
+				<img class="img-competences" src="images/redux.png" alt="">
+				<img class="img-competences" src="images/1_doAg1_fMQKWFoub-6gwUiQ.png" alt="">
+				<img class="img-competences" src="images/seo-search-engine-logo-with-magnifying-glass-and-arrow-vector.jpg" alt="">
+				<img class="img-competences" src="images/git-vs-github.png" alt="">
+				<img class="img-competences" src="images/0_qH7Nn9e7WoIHthVU.png" alt="">
+			</div>
+		</section>
+	</main>
 </body>
 </html>
-
