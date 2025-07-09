@@ -60,7 +60,7 @@ main {
 .container-nav {
 	top: 0;
 	width: 100%;
-	height: 60px;
+	height: auto;
 	background-color: #333;
 	display: flex;
 	justify-content: space-between;
@@ -70,7 +70,7 @@ main {
 }
 
 .titre {
-	padding-left: 20px;
+	padding-left: 1rem;
 	font-size: 30px;
 	color: #fff;
 }
@@ -80,8 +80,8 @@ main {
 	flex-direction: row;
 	justify-content: end;
 	gap: 1.5rem;
-	font-size: 15px;
-	padding-right: 20px;
+	font-size: 1rem;
+	padding-right: 1rem;
 	cursor: pointer;
 	color: #fff;
 	list-style: none;
@@ -102,7 +102,7 @@ main {
 	width: 0%;
 	height: 1px;
 	background-color: #fff;
-	transition: width 0.3s ease
+	transition: width 0.6s ease;
 }
 
 .text-decoration:hover::before {
@@ -114,46 +114,41 @@ main {
 }
 
  header {
-  position: relative;
-  width: 100%; 
-  height: auto;
+	position: relative;
+	width: 100%; 
+	height: auto;
 }
 
 .img-cover {
-  width: 100%;
-  height: auto;
-  display: block;
+	width: 100%;
+	height: auto;
 }
 
 .img-profil {
-  position: absolute;
-  bottom: 5.5rem;
-  left: 3.5rem;   
-  width: 180px; 
-  border-radius: 50%;
-  border: 2px solid white; 
+	position: absolute;
+	bottom: -5.5rem;
+	left: 3.5rem;   
+	width: 11.5rem; 
+	border-radius: 50%;
+	border: 2px solid white; 
 }
 
 .name {
 	position: absolute;
 	margin-left: 4.5rem;
-	margin-top: -6rem;
+	margin-top: 6rem;
 	font-size: 1.6rem;
 	font-weight: bold;
-	background: url("images/black-and-white-1.webp") center;
-	background-size: cover;
-	background-clip: text;
-	color: transparent; 
-	animation: animate 6s linear infinite reverse;
 }
 
 .professionnel {
+	position: absolute;
 	font-size: 1.8rem;
-	margin-top: -3rem;
+	margin-top: 9rem;
 	margin-left: 1rem;
 	white-space: nowrap;
 	overflow: hidden;
-	color: #fff;
+	color: black;
 	animation: typing 4s steps(22) infinite alternate-reverse;
 }
 
@@ -167,7 +162,7 @@ main {
 	width: 37rem;
 	height: 37rem;
 	border-radius: 100%;
-	margin-top: 10rem;
+	margin-top: 18rem;
 }
 
 .Presentation {
@@ -220,7 +215,7 @@ main {
 
 .section-comp{
 	height: auto;
-	margin-top: -50px;
+	margin-top: -1.5rem;
 }
 
 .competences{
@@ -261,11 +256,6 @@ main {
 	width: 100%;
 }
 
-.hr-2 {
-	margin-top: 5rem;
-	width: 100%;
-}
-
 .section-parcours {
 	background-color: #1111;
 	width: 100%;
@@ -273,16 +263,14 @@ main {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	justify-content: center;
 	margin-top: 5rem;
-	border-radius: 50%;
+	border-radius: 40rem;
 }
 
 .text-parcous {
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	height: 10rem;
-	margin-top: 1em;
+	margin-top: 2em;
 	margin-bottom: 4rem;
 	font-size: 3rem;
 	background: url("images/black-and-white-1.webp") center;
@@ -306,6 +294,7 @@ main {
 	animation: fadeInCard 1s ease-out forwards;
 	animation-timeline: view();
 	animation-range: entry 10% cover 60%;
+	width: 26rem;
 	height: 30rem;
 	position: relative;
 }
@@ -316,6 +305,7 @@ main {
 	margin-bottom: 5rem;
 	border-left: 6px solid #5c5c5c;
 	border-radius: 8px;
+	width: 26rem;
 	height: 9em;
 	padding: 1.5rem 1.8rem;
 	box-shadow: 0 8px 24px rgba(0,0,0,0.60);
@@ -329,8 +319,8 @@ main {
 
 .descriptif {
 	position: absolute;
-	margin-top:-26.5rem;
-	margin-left: 3rem;
+	margin-top:-26rem;
+	margin-left: 1.5rem;
 	width: 25rem;
 	background: #aca9a9;
 	padding: 1rem;
@@ -341,4 +331,67 @@ main {
 	animation: fadeInText 1s ease-out forwards;
 	animation-timeline: view();
 	animation-range: entry 10% cover 50%;
+}
+
+.section-projets {
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.text-projets {
+	height: 10rem;
+	margin-top: 2em;
+	margin-bottom: 1rem;
+	font-size: 3rem;
+}
+
+.article-cards {
+	display: flex;
+	flex-direction: row;
+	gap: 3rem;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.cards {
+	background-color: #1111;
+	width: 20rem;
+	height: 18rem;
+	border-radius: 2rem;
+	cursor: pointer;
+	transition: transform 0.6s ease, opacity 0.1s ease;
+	box-shadow: 16px 19px 10px -3px rgba(0,0,0,0.4)
+}
+
+.cards:hover {
+	transform: scale(1.04);
+}
+
+.cards:active {
+	opacity: 0.01;
+}
+
+.img-cards {
+	width: 100%;
+	height: 10rem;
+	object-fit: cover;
+}
+
+.h3-projets {
+	padding-left: 1rem;
+	color: black;
+}
+
+.p-projets {
+	padding-left: 1rem;
+	color: black;
+}
+
+.address-github {
+	text-decoration: none;
 }
