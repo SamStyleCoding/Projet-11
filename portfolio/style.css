@@ -1,54 +1,15 @@
-/* ==== Animations ==== */
-
- @keyframes typing {
-      0% {
-        width: 0ch;
-      }
-      20% {
-        width: 0ch;
-      }
-      70% {
-        width: 19.5ch;
-              }
-      100% {
-        width: 19.5ch;
-      }
-    }
-
-@keyframes animate {
-	to {
-		background-position-x: -500px;
-	}
-}
-
-@keyframes fadeInCard {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes fadeInText {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
+@import url(animations.css);
 
 
 /* ==== CSS ==== */
 
+:root {
+	--primary: #1111;
+	--secondary: #333;
+}
 
 body{
-	margin: 0;
+	margin: 0 0;
 }
 
 main {
@@ -63,7 +24,7 @@ main {
 	top: 0;
 	width: 100%;
 	height: auto;
-	background-color: #333;
+	background-color: var(--secondary);
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -155,7 +116,7 @@ main {
 }
 
 .section-pre {
-	background-color: #1111;
+	background-color: var(--primary);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -261,7 +222,7 @@ main {
 }
 
 .section-parcours {
-	background-color: #1111;
+	background-color: var(--primary);
 	width: 100%;
 	height: auto;
 	display: flex;
@@ -363,7 +324,7 @@ main {
 }
 
 .cards {
-	background-color: #1111;
+	background-color: var(--primary);
 	width: 20rem;
 	height: 18rem;
 	border-radius: 2rem;
@@ -397,7 +358,7 @@ main {
 }
 
 .footer {
-	background-color: #333;
+	background-color: var(--secondary);
 	color: #fff;
 	margin-top: 6rem;
 	padding: 2rem 1rem 1rem;
@@ -475,10 +436,6 @@ main {
 
 @media (max-width: 768px) {
 
-	body {
-		margin: 0;
-	}
-
 	.container-nav {
 		flex-direction: column;
 		justify-content: center;
@@ -503,20 +460,22 @@ main {
 	}
 
 	.section-pre {
-		width: 30rem;
-		height: 30rem;
+		width: 25rem;
+		height: 25rem;
 		position: relative;
 	}
 
 	.p-presentation {
 		width: 17rem;
 		margin-top: -1rem;
-		margin-top: 1rem;
+		margin-top: 0.1rem;
+		padding: 1.4rem;
+		font-size: 0.8rem;
 	}
 
 	.Presentation {
-		margin-top: -3rem;
-		font-size: 2rem;
+		margin-top: -4rem;
+		font-size: 1.7rem;
 	}
 
 	.cv {
@@ -526,8 +485,8 @@ main {
 		justify-content: center;
 		width: 0.4rem;
 		height: 0.4rem;
-		font-size: 0.7rem;
-		margin-top: 25rem;
+		font-size: 0.6rem;
+		margin-top: 20rem;
 	}
 
 	.img-profil {
@@ -552,13 +511,18 @@ main {
 		font-size: 2rem;
 	}
 
+	.cards {
+		width: 18rem;
+		height: 19rem;
+	}
+
 	.section-parcours {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 		border-radius: 0;
-		width: 149%;
+		width: 26rem;
 	}
 
 	.text-parcous {
@@ -566,22 +530,20 @@ main {
 	}
 
 	.card {
-		width: 23rem;
-		margin-left: 0.7rem;
+		width: 20rem;
 		margin-top: -6rem;
 		height: 35rem;
 	}
 
 	.card-2 {
-		width: 23rem;
-		margin-left: 0.7rem;
+		width: 20rem;
 		margin-top: -3rem;
 	}
 
 	.descriptif {
-		width: 20rem;
-		margin-left: 3.1rem;
-		margin-top: -30rem;
+		width: 17rem;
+		margin-left: 2.4rem;
+		margin-top: -31.3rem;
 	}
 
 	.text-projets {

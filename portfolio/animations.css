@@ -1,0 +1,45 @@
+ @keyframes typing {
+      0% {
+        width: 0ch;
+      }
+      20% {
+        width: 0ch;
+      }
+      70% {
+        width: 19.5ch;
+              }
+      100% {
+        width: 19.5ch;
+      }
+    }
+
+
+@keyframes animate {
+	to {
+		background-position-x: -500px;
+	}
+}
+
+
+@keyframes fadeInCard {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+@keyframes fadeInText {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
