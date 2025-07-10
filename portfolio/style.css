@@ -443,8 +443,8 @@ main {
 	}
 
 	.titre {
-		font-size: 20px;
-		margin-bottom: 2rem;
+		font-size: 25px;
+		margin-bottom: 0.5rem;
 	}
 
 	.menu-label {
@@ -454,9 +454,10 @@ main {
 		align-items: center;
 		margin-left: -3rem;
 		flex-wrap: wrap;
-		gap: 2rem 5rem;
+		gap: 1rem 1.2rem;
 		font-size: 1rem;
 		padding-right: -2rem -2rem;
+		padding-left: 4rem;
 	}
 
 	.section-pre {
