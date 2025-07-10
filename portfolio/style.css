@@ -43,7 +43,9 @@
   }
 }
 
+
 /* ==== CSS ==== */
+
 
 body{
 	margin: 0;
@@ -465,4 +467,181 @@ main {
 
 .address-contact:active {
 	opacity: 0.3;
+}
+
+
+/* ==== Mobile (max 767px) ==== */
+
+
+@media (max-width: 768px) {
+
+	body {
+		margin: 0;
+	}
+
+	.container-nav {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.titre {
+		font-size: 20px;
+		margin-bottom: 2rem;
+	}
+
+	.menu-label {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		margin-left: -3rem;
+		flex-wrap: wrap;
+		gap: 2rem 5rem;
+		font-size: 1rem;
+		padding-right: -2rem -2rem;
+	}
+
+	.section-pre {
+		width: 30rem;
+		height: 30rem;
+		position: relative;
+	}
+
+	.p-presentation {
+		width: 17rem;
+		margin-top: -1rem;
+		margin-top: 1rem;
+	}
+
+	.Presentation {
+		margin-top: -3rem;
+		font-size: 2rem;
+	}
+
+	.cv {
+		position: absolute;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 0.4rem;
+		height: 0.4rem;
+		font-size: 0.7rem;
+		margin-top: 25rem;
+	}
+
+	.img-profil {
+		width: 6rem;
+		top: 4.5rem;
+		left: 1rem;
+	}
+
+	.name {
+		font-size: 1.1rem;
+		margin-left: 1rem;
+		margin-top: 3.5rem;
+	}
+
+	.professionnel {
+		font-size: 1.2rem;
+		margin-left: 1rem;
+		margin-top: 5.5rem;
+	}
+
+	.competences{
+		font-size: 2rem;
+	}
+
+	.section-parcours {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		border-radius: 0;
+		width: 149%;
+	}
+
+	.text-parcous {
+		font-size: 2rem;
+	}
+
+	.card {
+		width: 23rem;
+		margin-left: 0.7rem;
+		margin-top: -6rem;
+		height: 35rem;
+	}
+
+	.card-2 {
+		width: 23rem;
+		margin-left: 0.7rem;
+		margin-top: -3rem;
+	}
+
+	.descriptif {
+		width: 20rem;
+		margin-left: 3.1rem;
+		margin-top: -30rem;
+	}
+
+	.text-projets {
+		font-size: 2rem;
+	}
+
+	.footer-contact h3,
+	.footer-social h3 {
+		font-size: 0.8rem;
+	}
+
+	.footer-contact p {
+		font-size: 0.7rem;
+	}
+
+	.footer-icons {
+		display: flex;
+		gap: 1rem;
+		margin-top: 0.5rem;
+		margin-left: 0.5rem;
+	}
+
+	.footer-icon {
+		width: 1.5rem;
+		height: 1.5rem;
+	}
+
+	.footer-bottom {
+		font-size: 0.7rem;
+	}
+
+}
+
+
+/* ==== Tablet (768px – 1024px) ==== */
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+	.card-2 {
+		width: 20rem;
+		margin-left: 3rem;
+	}
+
+	.img-profil {
+		width: 9rem;
+		top: 8.5rem;
+		left: 2rem;
+	}
+
+	.name {
+		font-size: 1.3rem;
+		margin-left: 2.5rem;
+		margin-top: 5rem;
+	}
+
+	.professionnel {
+		font-size: 1.5rem;
+		margin-left: 1rem;
+		margin-top: 7rem;
+	}
+	
 }
