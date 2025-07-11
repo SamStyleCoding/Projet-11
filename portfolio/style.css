@@ -76,15 +76,44 @@ main {
 	opacity: 0.3;
 }
 
- header {
+header {
 	position: relative;
 	width: 100%; 
 	height: auto;
 }
 
 .img-cover {
-	width: 100%;
-	height: auto;
+  position: relative;
+  width: 100%;
+  height: 20rem;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  object-fit: cover;
+  background-position: center;
+  opacity: 0;
+  animation: fadeSlide 35s infinite ease-in-out;
+}
+
+.slide:nth-child(1) { animation-delay: 0s; }
+.slide:nth-child(2) { animation-delay: 6s; }
+.slide:nth-child(3) { animation-delay: 12s; }
+.slide:nth-child(4) { animation-delay: 18s; }
+.slide:nth-child(5) { animation-delay: 24s; }
+.slide:nth-child(6) { animation-delay: 30s; }
+
+@keyframes fadeSlide {
+  0%   { opacity: 0; z-index: 0; }
+  5%   { opacity: 1; z-index: 1; }
+  25%  { opacity: 1; z-index: 1; }
+  30%  { opacity: 0; z-index: 0; }
+  100% { opacity: 0; z-index: 0; }
 }
 
 .img-profil {
@@ -94,6 +123,7 @@ main {
 	width: 11.5rem; 
 	border-radius: 50%;
 	border: 2px solid white; 
+	z-index: 2;
 }
 
 .name {
@@ -317,7 +347,7 @@ main {
 .article-cards {
 	display: flex;
 	flex-direction: row;
-	gap: 3rem;
+	gap: 7rem 4rem;
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
@@ -326,10 +356,10 @@ main {
 .cards {
 	background-color: var(--primary);
 	width: 20rem;
-	height: 18rem;
+	height: 22rem;
 	border-radius: 2rem;
 	cursor: pointer;
-	transition: transform 0.6s ease;
+	transition: transform 0.6s ease, opacity 0.3s ease;
 	box-shadow: 16px 19px 10px -3px rgba(0,0,0,0.4)
 }
 
@@ -337,10 +367,25 @@ main {
 	transform: scale(1.04);
 }
 
+.cards:active {
+	opacity: 0.5;
+}
+
 .img-cards {
 	width: 100%;
 	height: 10rem;
 	object-fit: cover;
+}
+
+.cards-img-logo {
+	display: flex;
+	flex-direction: row;
+	justify-content: start;
+	align-items: end;
+	gap: 3rem 0.2rem;
+	flex-wrap: wrap;
+	height: 0.2rem;
+	margin-top: -1rem;
 }
 
 .h3-projets {
@@ -351,6 +396,7 @@ main {
 .p-projets {
 	padding-left: 1rem;
 	color: black;
+	
 }
 
 .address-github {
@@ -430,6 +476,91 @@ main {
 	opacity: 0.3;
 }
 
+.github-cards-p1 {
+	color: black;
+	filter: invert(0);
+	width: 2rem;
+	padding-left: 1rem;
+	margin-top: -4rem;
+} 
+
+.img-js {
+	width: 2rem;
+	height: 2rem;
+}
+
+.github-cards-p2 {
+	color: black;
+	filter: invert(0);
+	width: 2rem;
+	padding-left: 1rem;
+	margin-bottom: -4rem;
+}
+
+.github-cards-p3 {
+	color: black;
+	filter: invert(0);
+	width: 2rem;
+	padding-left: 1rem;
+	margin-bottom: -3rem;
+}
+
+.github-cards-p4 {
+	color: black;
+	filter: invert(0);
+	width: 2rem;
+	padding-left: 1rem;
+	margin-bottom: -3rem;
+}
+
+.github-cards-p5 {
+	color: black;
+	filter: invert(0);
+	width: 2rem;
+	padding-left: 1rem;
+	margin-bottom: -4rem;
+}
+
+.github-cards-p6 {
+	color: black;
+	filter: invert(0);
+	width: 2rem;
+	padding-left: 1rem;
+	margin-bottom: -3rem;
+}
+
+.github-cards-p7 {
+	color: black;
+	filter: invert(0);
+	width: 2rem;
+	padding-left: 1rem;
+	margin-bottom: -3rem;
+}
+
+.github-cards-p8 {
+	color: black;
+	filter: invert(0);
+	width: 2rem;
+	padding-left: 1rem;
+	margin-bottom: -4rem;
+}
+
+.github-cards-p9 {
+	color: black;
+	filter: invert(0);
+	width: 2rem;
+	padding-left: 1rem;
+	margin-bottom: -2rem;
+}
+
+.github-cards:hover {
+	transform: scale(1.1);
+}
+
+.github-cards:hover {
+	transform: scale(1.1);
+}
+
 
 /* ==== Mobile (max 767px) ==== */
 
@@ -440,6 +571,7 @@ main {
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+		height: 7rem;
 	}
 
 	.titre {
@@ -453,6 +585,7 @@ main {
 		justify-content: center;
 		align-items: center;
 		margin-left: -3rem;
+		margin-top: 1.5rem;
 		flex-wrap: wrap;
 		gap: 1rem 1.2rem;
 		font-size: 1rem;
@@ -491,6 +624,10 @@ main {
 		margin-top: 20rem;
 	}
 
+	.img-cover {
+		height: 8rem;
+	}
+
 	.img-profil {
 		width: 6rem;
 		top: 4.5rem;
@@ -513,10 +650,27 @@ main {
 		font-size: 2rem;
 	}
 
-	.cards {
-		width: 18rem;
-		height: 19rem;
+	.img-comp {
+		gap: 7rem 0.8rem;
 	}
+
+	.cards {
+		margin-top: 3rem;
+		width: 22rem;
+		height: 23rem;
+	}
+
+	.cards-img-logo {
+		margin-top: -3rem;      
+		flex-wrap: wrap;     
+		justify-content: center;
+		gap: 0.5rem;
+	}
+
+	.github-cards-p1 {
+		width: 32px;
+	}
+
 
 	.section-parcours {
 		display: flex;
@@ -550,6 +704,11 @@ main {
 
 	.text-projets {
 		font-size: 2rem;
+		margin-bottom: -5rem;
+	}
+
+	.cards {
+		margin-bottom: 2rem;
 	}
 
 	.footer-contact h3,
@@ -590,9 +749,13 @@ main {
 		margin-left: 3rem;
 	}
 
+	.img-cover {
+		height: 13rem;
+	}
+
 	.img-profil {
 		width: 9rem;
-		top: 8.5rem;
+		top: 8rem;
 		left: 2rem;
 	}
 
