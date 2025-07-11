@@ -108,14 +108,6 @@ header {
 .slide:nth-child(5) { animation-delay: 24s; }
 .slide:nth-child(6) { animation-delay: 30s; }
 
-@keyframes fadeSlide {
-  0%   { opacity: 0; z-index: 0; }
-  5%   { opacity: 1; z-index: 1; }
-  25%  { opacity: 1; z-index: 1; }
-  30%  { opacity: 0; z-index: 0; }
-  100% { opacity: 0; z-index: 0; }
-}
-
 .img-profil {
 	position: absolute;
 	bottom: -5.5rem;
@@ -484,6 +476,22 @@ header {
 	margin-top: -4rem;
 } 
 
+.container-logo-cards {
+	display: flex;
+	flex-direction: row;
+	margin-left: 3rem;
+	background-color: black;
+}
+
+.logo-cards {
+	color: black;
+	filter: invert(0);
+	width: 2rem;
+	padding-left: 1rem;
+	margin-top: -2rem;
+	height: 2rem;
+} 
+
 .img-js {
 	width: 2rem;
 	height: 2rem;
@@ -669,6 +677,7 @@ header {
 
 	.github-cards-p1 {
 		width: 32px;
+		margin-left: -19rem;
 	}
 
 
@@ -735,6 +744,22 @@ header {
 	.footer-bottom {
 		font-size: 0.7rem;
 	}
+
+	.container-logo-cards {
+		display: flex;
+		flex-direction: row;
+		margin-left: 3rem;
+		background-color: black;
+}
+
+.logo-cards {
+	color: black;
+	filter: invert(0);
+	width: 2rem;
+	padding-left: 1rem;
+	margin-top: -2rem;
+	height: 2rem;
+} 
 
 }
 
