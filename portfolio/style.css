@@ -486,15 +486,15 @@ header {
 .logo-cards {
 	color: black;
 	filter: invert(0);
-	width: 2rem;
+	width: 1.8rem;
 	padding-left: 1rem;
-	margin-top: -2rem;
-	height: 2rem;
+	margin-top: -1.8rem;
+	height: 1.6rem;
 } 
 
 .img-js {
-	width: 2rem;
-	height: 2rem;
+	width: 1.8rem;
+	height: 1.6rem;
 }
 
 .github-cards-p2 {
@@ -565,8 +565,8 @@ header {
 	transform: scale(1.1);
 }
 
-.github-cards:hover {
-	transform: scale(1.1);
+.github-cards:active {
+	opacity: 0.5;
 }
 
 
@@ -574,6 +574,10 @@ header {
 
 
 @media (max-width: 768px) {
+
+	body {
+		overflow-x: hidden;
+	}
 
 	.container-nav {
 		flex-direction: column;
@@ -755,10 +759,10 @@ header {
 .logo-cards {
 	color: black;
 	filter: invert(0);
-	width: 2rem;
+	width: 1.8rem;
 	padding-left: 1rem;
-	margin-top: -2rem;
-	height: 2rem;
+	margin-top: -1.8rem;
+	height: 1.6rem;
 } 
 
 }
