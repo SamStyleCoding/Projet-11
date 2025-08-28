@@ -233,7 +233,7 @@ header {
 .img-comp {
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: flex-start;
 	flex-wrap: wrap;
 	gap: 7rem;
 }
@@ -764,7 +764,12 @@ header {
 	height: 1.6rem;
 } 
 
+.article-cards {
+	gap: 2rem;
 }
+
+}
+
 
 
 /* ==== Tablet (768px – 1024px) ==== */
